@@ -83,13 +83,13 @@ function HomeScreen() {
                 <InitialsContainer>
                     {deleteError &&
                         <p style={{fontSize: "2rem", fontWeight: "900"}}>Silerken hata oluştu: {deleteError}</p>}
+                    <h1 style={{textAlign: "center", margin: "20px"}}>Ömüşümüze Dair Yazılanlar</h1>
                     {initialsLoading || deleteLoading ? (<Loader/>) : (
                         initialsError ? (
                             <p style={{fontSize: "2rem", fontWeight: "900"}}>{initialsError}</p>
                         ) : (
                             initialsSuccess && (
                                 <Content>
-                                    <h1 style={{textAlign: "center", margin: "20px"}}>Ömüşümüze Dair Yazılanlar</h1>
                                     {initialsSuccess && initialsData.map(initial => {
                                         const date = initial.created_at
                                         return (
