@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# React App for an API
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a frontend for my API project about my son. To arrive backend repo please <a href="https://github.com/drcan94/omurziyad" target="_blank">click here<a/>
 
 ## Available Scripts
 
