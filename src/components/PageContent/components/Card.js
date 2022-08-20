@@ -14,7 +14,7 @@ const Container = styled.div`
   min-width: 350px;
   max-width: 450px;
   height: fit-content;
-  margin: 0 0 20px 0;
+  margin: 0 auto 20px auto;
   overflow: hidden;
   @media screen and (max-width: 1100px) {
     width: 47%;

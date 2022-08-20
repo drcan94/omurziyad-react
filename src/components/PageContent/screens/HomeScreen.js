@@ -20,7 +20,14 @@ const InitialsContainer = styled.div`
   display: flex;
   justify-content: center;
   flex-direction: column;
-  align-items: center;`
+  align-items: center;
+`
+
+const Content = styled(InitialsContainer)`
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+`
 
 const UnloggedContainer = styled.div`
   display: flex;
@@ -81,8 +88,8 @@ function HomeScreen() {
                             <p style={{fontSize: "2rem", fontWeight: "900"}}>{initialsError}</p>
                         ) : (
                             initialsSuccess && (
-                                <div>
-                                    <h1 style={{textAlign: "center", margin: "20px"}}>Ömüşümüzün İlkleri</h1>
+                                <Content>
+                                    <h1 style={{textAlign: "center", margin: "20px"}}>Ömüşümüze Dair Yazılanlar</h1>
                                     {initialsSuccess && initialsData.map(initial => {
                                         const date = initial.created_at
                                         return (
@@ -96,13 +103,13 @@ function HomeScreen() {
                                                 deleteHandler={() => {
                                                     if (userInfo.id === initial.commenter) {
                                                         dispatch(deleteInitial(initial.id))
-
                                                     }
                                                 }}
                                             />
                                         )
                                     })}
-                                </div>)
+                                </Content>
+                            )
                         )
 
 
