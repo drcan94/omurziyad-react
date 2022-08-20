@@ -60,7 +60,7 @@ export const addInitial = (content) => async (dispatch, getState) => {
         }
 
         const {data} = await axios.post(
-            "/api/omur/createinitial/",
+            "https://omurziyad.herokuapp.com/api/omur/createinitial/",
             {
                 'content': content,
             },

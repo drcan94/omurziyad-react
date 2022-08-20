@@ -20,7 +20,7 @@ export const login = (email, password) => async (dispatch) => {
             }
         }
         const {data} = await axios.post(
-            "/api/user/login/",
+            "https://omurziyad.herokuapp.com/api/user/login/",
             {
                 'username': email,
                 'password': password
