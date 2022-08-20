@@ -1,0 +1,4 @@
+export const GET_SCREEN_WIDTH = 'GET_SCREEN_WIDTH'
+
+
+
